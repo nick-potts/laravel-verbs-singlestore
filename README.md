@@ -20,6 +20,6 @@ run the script that demonstrates the slow queries:
 
 
 
-I tried reproducing the 'locking' nature, but it doesn't happen on my local machine.
+Running concurrently just hits the database hard, it doesn't lock like I initially thought:
+`php artisan queue:work & php artisan queue:work & php artisan queue:work & php artisan queue:work & php artisan queue:work & php artisan queue:work & php artisan app:dispatch-jobs`
 
-Run multiple queues using `php artisan queue:work`, then run `php artisan app:dispatch-jobs`
