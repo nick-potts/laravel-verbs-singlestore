@@ -16,3 +16,10 @@ run `php artisan app:seed-events` - Run multiple processes until you have 2m+ re
 
 run the script that demonstrates the slow queries:
 `php app/script.php`
+
+
+
+
+I tried reproducing the 'locking' nature, but it doesn't happen on my local machine.
+
+Run multiple queues using `php artisan queue:work`, then run `php artisan app:dispatch-jobs`
