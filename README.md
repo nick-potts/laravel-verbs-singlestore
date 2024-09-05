@@ -12,6 +12,8 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
+run migrations `php artisan migrate`
+
 run `php artisan app:seed-events` - Run multiple processes until you have 2m+ records
 
 run the script that demonstrates the slow queries:
